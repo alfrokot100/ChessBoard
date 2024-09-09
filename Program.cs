@@ -10,7 +10,9 @@
 
             bool ConversionSucces = int.TryParse(Number, out Result);
             if (ConversionSucces) { Console.WriteLine(Result); }
-            else { Console.WriteLine("Felaktig input! Måste vara en siffra"); }
+            else { Console.WriteLine("Felaktig input! Måste vara en siffra");
+                Console.WriteLine("Test");
+            }
         }
     }
 }
