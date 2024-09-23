@@ -12,14 +12,16 @@ namespace ChessBoard
             Console.OutputEncoding = System.Text.Encoding.Unicode;
             String Number = Console.ReadLine();
 
-            bool ConversionSucces = int.TryParse(Number, out int Result);
+            
+            bool ConversionSucces = int.TryParse(Number, out int Result);//Using tryParse to read user input
+
             if (ConversionSucces)
             {
-                for (int i = 0; i < Result; i++)
+                for (int i = 0; i < Result; i++)//Creating two for-loops for rows and columns
                 {
                     for (int j = 0; j < Result; j++)
                     {
-                        if ((i + j) % 2 == 0)
+                        if ((i + j) % 2 == 0) //Printing black and white squares based on if even or not
                         {
                             Console.Write("◼︎");
                         }
