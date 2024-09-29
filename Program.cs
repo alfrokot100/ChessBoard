@@ -1,4 +1,6 @@
 ﻿using System;
+/*Alfred Oching Osewe Okoth
+ NET24*/
 
 namespace ChessBoard
 {
